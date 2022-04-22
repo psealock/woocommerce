@@ -41,6 +41,7 @@ export type TaskListProps = TaskListType & {
 	query: {
 		task?: string;
 	};
+	cesHeader?: boolean;
 };
 
 export const TaskList: React.FC< TaskListProps > = ( {
@@ -133,13 +134,6 @@ export const TaskList: React.FC< TaskListProps > = ( {
 
 	const keepTasks = () => {
 		keepCompletedTasks( id );
-		// const updateOptionsParams = {
-		// 	woocommerce_task_list_keep_completed: 'yes',
-		// };
-
-		// updateOptions( {
-		// 	...updateOptionsParams,
-		// } );
 	};
 
 	const renderMenu = () => {
@@ -160,7 +154,7 @@ export const TaskList: React.FC< TaskListProps > = ( {
 										setShowDismissModal( true );
 										onToggle();
 									} else {
-										hideTasks( 'remove_card' );
+										hideTasks();
 									}
 								} }
 							>

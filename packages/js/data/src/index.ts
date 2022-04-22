@@ -22,6 +22,7 @@ import { OnboardingSelectors } from './onboarding/selectors';
 import { PaymentSelectors } from './payment-gateways/selectors';
 import { WPDataSelectors } from './types';
 import { PluginSelectors } from './plugins/selectors';
+import { OptionsSelectors } from './options/types';
 
 export * from './types';
 export { SETTINGS_STORE_NAME } from './settings';
@@ -123,7 +124,7 @@ export type WCSelectorType< T > = T extends typeof REVIEWS_STORE_NAME
 	: T extends typeof USER_STORE_NAME
 	? WPDataSelectors
 	: T extends typeof OPTIONS_STORE_NAME
-	? WPDataSelectors
+	? OptionsSelectors
 	: T extends typeof NAVIGATION_STORE_NAME
 	? WPDataSelectors
 	: T extends typeof NOTES_STORE_NAME
