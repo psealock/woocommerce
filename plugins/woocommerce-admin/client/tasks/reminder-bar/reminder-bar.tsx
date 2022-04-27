@@ -28,7 +28,6 @@ import './reminder-bar.scss';
 
 type ReminderBarProps = {
 	taskListId: string;
-	pageTitle: string;
 	updateBodyMargin: () => void;
 };
 
@@ -87,7 +86,7 @@ const ReminderText: React.FC< ReminderTextProps > = ( {
 };
 
 export const TasksReminderBar: React.FC< ReminderBarProps > = ( {
-	taskListId = 'setup_experiment_1',
+	taskListId,
 	updateBodyMargin,
 } ) => {
 	const { updateOptions } = useDispatch( OPTIONS_STORE_NAME );
