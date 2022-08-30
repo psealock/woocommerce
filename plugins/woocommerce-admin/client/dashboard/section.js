@@ -11,6 +11,7 @@ import SectionControls from './section-controls';
 
 export default class Section extends Component {
 	constructor( props ) {
+		console.log( 'this is a change' );
 		super( props );
 		const { title } = props;
 
