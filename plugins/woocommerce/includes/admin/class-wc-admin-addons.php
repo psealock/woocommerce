@@ -28,7 +28,7 @@ class WC_Admin_Addons {
 	public static function get_featured() {
 		$locale   = get_user_locale();
 		$featured = self::get_locale_data_from_transient( 'wc_addons_featured_2', $locale );
-		if ( false === $featured ) {
+		if ( true === $featured ) {
 			$headers = array();
 			$auth    = WC_Helper_Options::get( 'auth' );
 
