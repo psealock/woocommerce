@@ -165,4 +165,16 @@ WooCommerce comes with some sample data you can use to see how products look; im
 
 = 7.0.0 2022-XX-XX =
 
+* Fix - Added in the missing tracks events for the shipping default settings tour [#34601](https://github.com/woocommerce/woocommerce/pull/34601)
+* Fix - Add missing styles for the progress bar component [#34521](https://github.com/woocommerce/woocommerce/pull/34521)
+* Fix - Allow customer to save a product when tinymce is not the default text editor [#34551](https://github.com/woocommerce/woocommerce/pull/34551)
+* Fix - Corrects the plurality of an "Orders" string to fix the `.pot` file [#34491](https://github.com/woocommerce/woocommerce/pull/34491)
+* Fix - Ensure customer notes can be set, retrieved and edited when using COT. [#34477](https://github.com/woocommerce/woocommerce/pull/34477)
+* Fix - Fix "1 of 2 steps" is shown for the first step in a 3 step tour [#34413](https://github.com/woocommerce/woocommerce/pull/34413)
+* Fix - Fix Button block markup for Onboarding homepage [#33966](https://github.com/woocommerce/woocommerce/pull/33966)
+* Fix - Fix country field is empty when navigating back to "Store Details" tab [#34484](https://github.com/woocommerce/woocommerce/pull/34484)
+* Fix - Fixed the image size issue in the marketing slider. [#34589](https://github.com/woocommerce/woocommerce/pull/34589)
+* Fix - Fix error when 'woocommerce_enqueue_styles' returns non-array. [#34671](https://github.com/woocommerce/woocommerce/pull/34671)
+* Fix - Fix product list price help label to properly reflect tax settings. [#34564](https://github.com/woocommerce/woocommerce/pull/34564)
+
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/changelog.txt).
