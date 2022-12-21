@@ -1,3 +1,4 @@
 {
-	"extends": "@w-config"
+	"extends": "@w-config",
+	"extends": "@ig"
 }
