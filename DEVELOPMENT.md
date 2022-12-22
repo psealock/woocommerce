@@ -14,36 +14,35 @@ Our repository uses [Turborepo](https://turborepo.org) for `build` and `test` co
 
 If you are interested in running a `turbo` command against a single plugin, package, or tool, you can do so with the `--filter` flag. This flag supports the `"name"` option in `package.json` files, paths, and globs.
 
-If you would like to read more about the syntax, please check out [the Turborepo filtering documentation](https://turborepo.org/docs/core-concepts/filtering).
-
-### Examples
-
-Here are some examples of the ways you can use Turborepo / pnpm commands:
-
-```bash
-# Lint and build all plugins, packages, and tools. Note the use of `-r` for lint,
-# turbo does not run the lint at this time.
-pnpm run -r lint && pnpm run build 
+If you would like to read more about the syntax, please check out [the Turborepo filtering documentation](https://turborepo.org/docs/core-concepts/fi& pnpm run build
 
 # Build WooCommerce Core and all of its dependencies
-pnpm run --filter='woocommerce' build 
+
+pnpm run --filter='woocommerce' build
 
 # Lint the @woocommerce/components package - note the different argument order, turbo scripts
+
 # are not running lints at this point in time.
-pnpm run -r --filter='@woocommerce/components' lint 
+
+pnpm run -r --filter='@woocommerce/components' lint
 
 # Test all of the @woocommerce scoped packages
-pnpm run --filter='@woocommerce/*' test 
+
+pnpm run --filter='@woocommerce/\*' test
 
 # Build all of the JavaScript packages
-pnpm run --filter='./packages/js/*' build 
+
+pnpm run --filter='./packages/js/\*' build
 
 # Build everything except WooCommerce Core
-pnpm run --filter='!woocommerce' build 
+
+pnpm run --filter='!woocommerce' build
 
 # Build everything that has changed since the last commit
-pnpm run --filter='[HEAD^1]' build 
-```
+
+pnpm run --filter='[HEAD^1]' build
+
+````
 
 ### Cache busting Turbo
 
@@ -54,7 +53,7 @@ e.g.
 ```bash
 # Force an uncached build of WooCommerce Core and all of its dependencies
 TURBO_FORCE=true pnpm run --filter='woocommerce' build
-```
+````
 
 ## Other Commands
 
