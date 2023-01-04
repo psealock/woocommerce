@@ -36,6 +36,8 @@ class WC_Admin_Help {
 			return;
 		}
 
+		echo 'this is a change';
+
 		$screen->add_help_tab(
 			array(
 				'id'      => 'woocommerce_support_tab',
