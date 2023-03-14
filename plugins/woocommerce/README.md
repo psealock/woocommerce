@@ -8,7 +8,7 @@
 <a href="https://codecov.io/gh/woocommerce/woocommerce"><img src="https://codecov.io/gh/woocommerce/woocommerce/branch/trunk/graph/badge.svg" alt="codecov"></a>
 </p>
 
-This is the WooCommerce Core plugin. Here you can browse the source and keep track of development. We recommend all developers to follow the [WooCommerce development blog](https://woocommerce.wordpress.com/) to stay up to date about everything happening in the project. You can also [follow @DevelopWC](https://twitter.com/DevelopWC) on Twitter for the latest development updates.
+This is the a change
 
 If you are not a developer, please use the [WooCommerce plugin page](https://wordpress.org/plugins/woocommerce/) on WordPress.org.
 
@@ -18,7 +18,7 @@ Please make sure you follow the [repository's getting started guide](../../READM
 
 ```bash
 # Make sure that WooCommerce Core and all of its dependencies are built
-pnpm run --filter=woocommerce build 
+pnpm run --filter=woocommerce build
 # Make sure you're in the WooCommerce Core directory
 cd plugins/woocommerce
 # Start the development environment
@@ -38,9 +38,9 @@ This directory contains the CSS and jQuery code for WooCommerce.
 
 ```bash
 # Build the assets.
-pnpm run --filter=woocommerce/client/legacy build 
+pnpm run --filter=woocommerce/client/legacy build
 # Lint the assets.
-pnpm run --filter=woocommerce/client/legacy lint 
+pnpm run --filter=woocommerce/client/legacy lint
 ```
 
 ### `plugins/woocommerce-admin`
@@ -49,11 +49,11 @@ This directory contains the React-based admin interface.
 
 ```bash
 # Build the React-based admin client.
-pnpm run --filter=woocommerce/client/admin build 
+pnpm run --filter=woocommerce/client/admin build
 # Lint the React-based admin client.
-pnpm run --filter=woocommerce/client/admin lint 
+pnpm run --filter=woocommerce/client/admin lint
 # Test the React-based admin client.
-pnpm run --filter=woocommerce/client/admin test 
+pnpm run --filter=woocommerce/client/admin test
 ```
 
 #### Helper Scripts
@@ -62,20 +62,22 @@ Here is a collection of scripts that can help when developing the React-based ad
 
 ```bash
 # Create a develoment build of the React-based admin client.
-pnpm --filter=woocommerce/client/admin dev 
+pnpm --filter=woocommerce/client/admin dev
 # Create and watch a development build of the React-based admin client.
-pnpm --filter=woocommerce/client/admin start 
+pnpm --filter=woocommerce/client/admin start
 # Watch the tests of the React-based admin client.
-pnpm --filter=woocommerce/client/admin test:watch 
+pnpm --filter=woocommerce/client/admin test:watch
 # Run a type check over the React-based admin client's TypeScript files.
-pnpm --filter=woocommerce/client/admin ts:check 
+pnpm --filter=woocommerce/client/admin ts:check
 ```
 
 ## Documentation
-* [WooCommerce Documentation](https://docs.woocommerce.com/)
-* [WooCommerce Developer Documentation](https://github.com/woocommerce/woocommerce/wiki)
-* [WooCommerce Code Reference](https://docs.woocommerce.com/wc-apidocs/)
-* [WooCommerce REST API Docs](https://woocommerce.github.io/woocommerce-rest-api-docs/)
+
+-   [WooCommerce Documentation](https://docs.woocommerce.com/)
+-   [WooCommerce Developer Documentation](https://github.com/woocommerce/woocommerce/wiki)
+-   [WooCommerce Code Reference](https://docs.woocommerce.com/wc-apidocs/)
+-   [WooCommerce REST API Docs](https://woocommerce.github.io/woocommerce-rest-api-docs/)
 
 ## Reporting Security Issues
+
 To disclose a security issue to our team, [please submit a report via HackerOne here](https://hackerone.com/automattic/).
