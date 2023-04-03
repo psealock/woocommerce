@@ -2268,17 +2268,29 @@ importers:
       ts-jest: ^29.1.0
       typescript: ^4.9.5
     dependencies:
+<<<<<<< HEAD
       '@commander-js/extra-typings': 0.1.0_commander@9.4.0
       chalk: 4.1.2
       commander: 9.4.0
       dotenv: 10.0.0
     devDependencies:
+=======
+      chalk: 4.1.2
+      commander: 9.4.0
+      dotenv: 10.0.0
+      ts-jest: 29.1.0_q744lk64cx4tbpg7zn4yr5nesi
+    devDependencies:
+      '@commander-js/extra-typings': 0.1.0_commander@9.4.0
+>>>>>>> 39cb658c22 (get hello world working)
       '@types/jest': 27.4.1
       '@types/node': 16.18.21
       '@woocommerce/eslint-plugin': link:../../packages/js/eslint-plugin
       eslint: 8.32.0
       jest: 29.5.0_@types+node@16.18.21
+<<<<<<< HEAD
       ts-jest: 29.1.0_q744lk64cx4tbpg7zn4yr5nesi
+=======
+>>>>>>> 39cb658c22 (get hello world working)
       typescript: 4.9.5
 
   tools/package-release:
@@ -7861,7 +7873,11 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.21.3
+<<<<<<< HEAD
       '@babel/helper-module-imports': 7.16.0
+=======
+      '@babel/helper-module-imports': 7.18.6
+>>>>>>> 39cb658c22 (get hello world working)
       '@babel/helper-plugin-utils': 7.20.2
       babel-plugin-polyfill-corejs2: 0.3.3_@babel+core@7.21.3
       babel-plugin-polyfill-corejs3: 0.4.0_@babel+core@7.21.3
@@ -9370,7 +9386,6 @@ packages:
       commander: 9.x
     dependencies:
       commander: 9.4.0
-    dev: false
 
   /@cspotcode/source-map-support/0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -20676,7 +20691,7 @@ packages:
     hasBin: true
     dependencies:
       browserslist: 3.2.8
-      caniuse-lite: 1.0.30001146
+      caniuse-lite: 1.0.30001418
       normalize-range: 0.1.2
       num2fraction: 1.2.2
       postcss: 6.0.23
@@ -22246,7 +22261,6 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       fast-json-stable-stringify: 2.1.0
-    dev: true
 
   /bser/2.1.1:
     resolution: {integrity: sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==}
@@ -30650,7 +30664,10 @@ packages:
       - '@types/node'
       - supports-color
       - ts-node
+<<<<<<< HEAD
     dev: true
+=======
+>>>>>>> 39cb658c22 (get hello world working)
 
   /jest-config/24.9.0:
     resolution: {integrity: sha512-RATtQJtVYQrp7fvWg6f5y3pEFj9I+H8sWw4aKxnDZ96mob5i5SD6ZEGWgMLXQ4LE8UurrjbdlLWdUeo+28QpfQ==}
@@ -32642,7 +32659,10 @@ packages:
       - '@types/node'
       - supports-color
       - ts-node
+<<<<<<< HEAD
     dev: true
+=======
+>>>>>>> 39cb658c22 (get hello world working)
 
   /jmespath/0.16.0:
     resolution: {integrity: sha512-9FzQjJ7MATs1tSpnco1K6ayiYE3figslrXA72G2HQ/n76RzvYlofyi5QM+iX4YRs/pu3yzxlVQSST23+dMDknw==}
@@ -42476,7 +42496,11 @@ packages:
       semver: 7.3.8
       typescript: 4.9.5
       yargs-parser: 21.1.1
+<<<<<<< HEAD
     dev: true
+=======
+    dev: false
+>>>>>>> 39cb658c22 (get hello world working)
 
   /ts-loader/9.4.1_t37drsge5fnqkss6ynqsf64hyi:
     resolution: {integrity: sha512-384TYAqGs70rn9F0VBnh6BPTfhga7yFNdC5gXbQpDrBj9/KsT4iRkGqKXhziofHOlE2j6YEaiTYVGKKvPhGWvw==}
