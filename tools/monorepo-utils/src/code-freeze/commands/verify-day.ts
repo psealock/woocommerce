@@ -2,6 +2,7 @@
  * External dependencies
  */
 import { Command } from '@commander-js/extra-typings';
+import chalk from 'chalk';
 
 /**
  * Internal dependencies
