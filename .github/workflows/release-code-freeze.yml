@@ -67,7 +67,7 @@ jobs:
               shell: php {0}
               run: |
                   <?php
-                  echo getenv( 'TEST_VAR' )
+                  echo getenv( 'TEST_VAR' );
 
     # maybe-create-next-milestone-and-release-branch:
     #     name: 'Maybe create next milestone and release branch'
