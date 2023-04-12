@@ -40,7 +40,9 @@ jobs:
             #       build: false
 
             - name: Install prerequisites
-              run: pnpm install --filter monorepo-utils
+              run: |
+                  npm install -g pnpm@7
+                  pnpm install --filter monorepo-utils
 
             - name: 'Check whether today is the code freeze day'
               id: check-freeze
