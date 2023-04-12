@@ -3,7 +3,7 @@
  */
 import { Command } from '@commander-js/extra-typings';
 import chalk from 'chalk';
-import { setOutput, exportVariable } from '@actions/core';
+import { setOutput } from '@actions/core';
 
 /**
  * Internal dependencies
@@ -55,10 +55,7 @@ export const verifyDayCommand = new Command( 'verify-day' )
 		);
 
 		if ( github ) {
-			console.log( 'github environment' );
-			console.log( process.env.GIT_AUTHOR_NAME );
-			setOutput( 'freeze', 'sounds very cold' );
-			exportVariable( 'TEST_VAR', 'hello world' );
+			setOutput( 'freeze', isCodeFreezeDay );
 		}
 
 		process.exit( 0 );

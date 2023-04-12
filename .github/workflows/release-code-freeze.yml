@@ -51,23 +51,12 @@ jobs:
     test-previous-job:
         needs: verify-code-freeze
         runs-on: ubuntu-20.04
+        if: needs.verify-code-freeze.outputs.freeze
         steps:
-            - name: 'Install PHP'
-              uses: shivammathur/setup-php@8e2ac35f639d3e794c1da1f28999385ab6fdf0fc
-              with:
-                  php-version: '7.4'
-
             - name: 'print output'
               run: |
                   echo "hello world"
                   echo ${{ needs.verify-code-freeze.outputs.freeze }}
-
-            - name: 'Check PHP value'
-              id: check-php
-              shell: php {0}
-              run: |
-                  <?php
-                  echo getenv( 'TEST_VAR' );
 
     # maybe-create-next-milestone-and-release-branch:
     #     name: 'Maybe create next milestone and release branch'
