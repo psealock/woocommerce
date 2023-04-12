@@ -29,4 +29,8 @@ describe( 'isTodayCodeFreezeDay', () => {
 		expect( isTodayCodeFreezeDay( JULY_17_2023 ) ).toBeTruthy();
 		expect( isTodayCodeFreezeDay( AUGUST_21_2023 ) ).toBeTruthy();
 	} );
+
+	it( 'should error out when passed an invalid date', () => {
+		expect( () => isTodayCodeFreezeDay( 'invalid date' ) ).toThrow();
+	} );
 } );

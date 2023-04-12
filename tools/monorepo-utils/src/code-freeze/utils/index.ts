@@ -8,7 +8,13 @@ export const DAYS_BETWEEN_CODE_FREEZE_AND_RELEASE = 22;
  * @return {Date} The Date object of now or the override time when specified.
  */
 export const getToday = ( now = 'now' ): Date => {
-	return now === 'now' ? new Date() : new Date( now );
+	const today = now === 'now' ? new Date() : new Date( now );
+	if ( isNaN( today.getTime() ) ) {
+		throw new Error(
+			'Invalid date: Check the override parameter (-o, --override) is a correct Date string'
+		);
+	}
+	return today;
 };
 
 /**
@@ -30,7 +36,6 @@ export const getFutureDate = ( today: Date ) => {
  */
 export const isTodayCodeFreezeDay = ( now: string ) => {
 	const today = getToday( now );
-	// TODO throw error if invalid date
 	const futureDate = getFutureDate( today );
 	const month = futureDate.getUTCMonth();
 	const year = futureDate.getUTCFullYear();
