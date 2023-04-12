@@ -3,6 +3,7 @@
  */
 import { Command } from '@commander-js/extra-typings';
 import chalk from 'chalk';
+import { setOutput, exportVariable } from '@actions/core';
 
 /**
  * Internal dependencies
@@ -20,7 +21,11 @@ export const verifyDayCommand = new Command( 'verify-day' )
 		'-o, --override <override>',
 		"Time Override: The time to use in checking whether the action should run (default: 'now')."
 	)
-	.action( ( { override } ) => {
+	.option(
+		'-g --github',
+		'CLI command is used in the Github Actions context.'
+	)
+	.action( ( { override, github } ) => {
 		const today = getToday( override );
 		const futureDate = getFutureDate( today );
 		console.log(
@@ -48,6 +53,13 @@ export const verifyDayCommand = new Command( 'verify-day' )
 				} code freeze day.`
 			)
 		);
+
+		if ( github ) {
+			console.log( 'github environment' );
+			console.log( process.env.GIT_AUTHOR_NAME );
+			setOutput( 'freeze', 'sounds very cold' );
+			exportVariable( 'TEST_VAR', 'hello world' );
+		}
 
 		process.exit( 0 );
 	} );
