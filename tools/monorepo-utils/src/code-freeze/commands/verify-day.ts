@@ -55,7 +55,7 @@ export const verifyDayCommand = new Command( 'verify-day' )
 		);
 
 		if ( github ) {
-			setOutput( 'freeze', isCodeFreezeDay );
+			setOutput( 'freeze', isCodeFreezeDay.toString() );
 		}
 
 		process.exit( 0 );
