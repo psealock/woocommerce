@@ -7,8 +7,8 @@ export const DAYS_BETWEEN_CODE_FREEZE_AND_RELEASE = 22;
  * @param {string} now The time to use in checking if today is the day of the code freeze. Default to now.
  * @return {Date} The Date object of now or the override time when specified.
  */
-export const getToday = ( now?: string ) => {
-	return now ? new Date( now ) : new Date();
+export const getToday = ( now = 'now' ): Date => {
+	return now === 'now' ? new Date() : new Date( now );
 };
 
 /**
@@ -28,8 +28,9 @@ export const getFutureDate = ( today: Date ) => {
  * @param {string} now The time to use in checking if today is the day of the code freeze. Default to now.
  * @return {boolean} true if today is the day of the code freeze.
  */
-export const isTodayCodeFreezeDay = ( now?: string ) => {
+export const isTodayCodeFreezeDay = ( now: string ) => {
 	const today = getToday( now );
+	// TODO throw error if invalid date
 	const futureDate = getFutureDate( today );
 	const month = futureDate.getUTCMonth();
 	const year = futureDate.getUTCFullYear();
