@@ -68,7 +68,7 @@ jobs:
               if: steps.check-freeze.outputs.freeze == 'true'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: pnpm run utils code-freeze version-bump -o ${{ github.repository_owner }} -v ${{ steps.milestone.outputs.nextDevelopmentVersion }}
+              run: pnpm run utils code-freeze version-bump -o ${{ github.repository_owner }} -v ${{ steps.milestone.outputs.nextDevelopmentVersion }}.0-dev
     # prep-trunk:
     #     name: Preps trunk for next development cycle
     #     runs-on: ubuntu-20.04
