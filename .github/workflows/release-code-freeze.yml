@@ -1,7 +1,7 @@
 name: 'Release: Code freeze'
 on:
     schedule:
-        - cron: '0 23 * * 1' # Run at 2300 UTC on Mondays.
+        - cron: '0 23 * * 1' # Run at 2300 UTC on Mondays. THIS IS A TEST
     workflow_dispatch:
         inputs:
             timeOverride:
