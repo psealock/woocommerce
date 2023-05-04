@@ -163,6 +163,53 @@ WooCommerce comes with some sample data you can use to see how products look; im
 
 == Changelog ==
 
-= 7.8.0 2023-XX-XX =
+= 7.8.0 2023-05-26 =
+
+**WooCommerce**
+
+* Fix - Above notification threshold when "Out of stock threshold" filed value is empty [#37855](https://github.com/woocommerce/woocommerce/pull/37855)
+* Fix - Added numeric check for Regular price in bulk edits. [#37812](https://github.com/woocommerce/woocommerce/pull/37812)
+* Fix - add missing aria-label attributes to help tips [#37808](https://github.com/woocommerce/woocommerce/pull/37808)
+* Fix - add refunded_payment property in the create refund response [#37816](https://github.com/woocommerce/woocommerce/pull/37816)
+* Fix - Ensure the remove icon shows properly on smaller screens when using the Twenty Twenty One theme [#37859](https://github.com/woocommerce/woocommerce/pull/37859)
+* Fix - Fix decimal points for SEK, HUF and CZK currencies [#37834](https://github.com/woocommerce/woocommerce/pull/37834)
+* Fix - fix stock status is not correct in JSON structure data if product is onbackorder [#37837](https://github.com/woocommerce/woocommerce/pull/37837)
+* Fix - Fix styling of checkbox (and other input) labels on product page tabs. [#37791](https://github.com/woocommerce/woocommerce/pull/37791)
+* Fix - Fix wrong file name in error message in update-wp-env.php. [#37891](https://github.com/woocommerce/woocommerce/pull/37891)
+* Fix - For the Twenty Twenty One theme, reduce padding within notices on smaller screens [#37862](https://github.com/woocommerce/woocommerce/pull/37862)
+* Fix - Handle updating customer when user_registered is 0000-00-00 00:00:00. [#37907](https://github.com/woocommerce/woocommerce/pull/37907)
+* Fix - No warning shown for zero price. [#37817](https://github.com/woocommerce/woocommerce/pull/37817)
+* Fix - Prevents error in Customers API endpoint when date_created value is missing [#37860](https://github.com/woocommerce/woocommerce/pull/37860)
+* Fix - Removed aria-disabled attribute from "Update Cart" button as it already has a disabled attribute. [#37820](https://github.com/woocommerce/woocommerce/pull/37820)
+* Fix - skip k6 api order RUD tests on non-existant order when C test fails [#37739](https://github.com/woocommerce/woocommerce/pull/37739)
+* Fix - Use waitUntil instead of waitForLoadState in page.goto() and page.click(). [#37831](https://github.com/woocommerce/woocommerce/pull/37831)
+* Fix - When creating default storefront pages, the site language (and not the language of the current user) should be used. [#37795](https://github.com/woocommerce/woocommerce/pull/37795)
+* Add - Add description block to product editor template [#37852](https://github.com/woocommerce/woocommerce/pull/37852)
+* Add - Added scaffolding for new core profiler [#37628](https://github.com/woocommerce/woocommerce/pull/37628)
+* Add - Add plugin installer version independent of WP cron. [#37753](https://github.com/woocommerce/woocommerce/pull/37753)
+* Add - add support for minlenght in the template [#37840](https://github.com/woocommerce/woocommerce/pull/37840)
+* Add - Add unresolved assets for iframe editors to editor settings [#37570](https://github.com/woocommerce/woocommerce/pull/37570)
+* Add - Show the number of variations imported [#37829](https://github.com/woocommerce/woocommerce/pull/37829)
+* Add - Track stock quantity for this product should be disabled when Enable stock management within settings is disabled, and enabled otherwise [#37957](https://github.com/woocommerce/woocommerce/pull/37957)
+* Update - add pagination navigation below Settings Tax list table [#37916](https://github.com/woocommerce/woocommerce/pull/37916)
+* Update - Loading svgs in product block template by URL. [#37869](https://github.com/woocommerce/woocommerce/pull/37869)
+* Update - Moving product block editor styling to prdouct editor package. [#37805](https://github.com/woocommerce/woocommerce/pull/37805)
+* Update - Replacing hardcoded info and error notices with the correct wp_print_notice functions. [#37514](https://github.com/woocommerce/woocommerce/pull/37514)
+* Update - Update Category product metabox with an async dropdown search control rendered with React. [#36869](https://github.com/woocommerce/woocommerce/pull/36869)
+* Update - Update current block names to reflect use case and avoid conflicts#37704 [#37851](https://github.com/woocommerce/woocommerce/pull/37851)
+* Update - Update product template to include category section and block. [#37295](https://github.com/woocommerce/woocommerce/pull/37295)
+* Update - Updating product editor block template to include stock status and refactor others. [#37906](https://github.com/woocommerce/woocommerce/pull/37906)
+* Update - Updating the usage of LayoutContext and moving to admin-layout package. [#37720](https://github.com/woocommerce/woocommerce/pull/37720)
+* Dev - Add the ability to skip the `review-testing-instructions` workflow when the PR is from an external contributor. [#37813](https://github.com/woocommerce/woocommerce/pull/37813)
+* Dev - Correct URL and assertion in merchant/add-order perf test. [#37719](https://github.com/woocommerce/woocommerce/pull/37719)
+* Dev - Fix recent failures in "Smoke test release" workflow. [#37783](https://github.com/woocommerce/woocommerce/pull/37783)
+* Dev - remove unused deasync dependency [#37821](https://github.com/woocommerce/woocommerce/pull/37821)
+* Dev - Update pnpm to version 8. [#37915](https://github.com/woocommerce/woocommerce/pull/37915)
+* Dev - Update the WSL setup instructions in the readme. [#37819](https://github.com/woocommerce/woocommerce/pull/37819)
+* Dev - Use locator.fill to fill variation values in the form instead of page.fill [#37854](https://github.com/woocommerce/woocommerce/pull/37854)
+* Tweak - Fix typo in a function comment. [#37829](https://github.com/woocommerce/woocommerce/pull/37829)
+* Enhancement - Add `featured` field to the images array for Product REST API [#37815](https://github.com/woocommerce/woocommerce/pull/37815)
+* Enhancement - Change from using a figure to using a div around the single product image to improve accessibility [#37853](https://github.com/woocommerce/woocommerce/pull/37853)
+
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/changelog.txt).
