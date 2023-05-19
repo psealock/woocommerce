@@ -47,8 +47,6 @@ function WC() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.Fu
 	return WooCommerce::instance();
 }
 
-echo "this is a test";
-
 /**
  * Returns the WooCommerce object container.
  * Code in the `includes` directory should use the container to get instances of classes in the `src` directory.
