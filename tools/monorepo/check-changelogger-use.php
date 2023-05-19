@@ -225,7 +225,7 @@ foreach ( $touched_projects as $slug => $files ) {
 			$exit = 1;
 		} else {
 			printf(
-				"\e[1;31mProject %s is being changed, but no change file in %s is touched!\e[0m\n",
+				"\e[1;31mProject %s is being changed, ZZZZZZZZZ but no change file in %s is touched!\e[0m\n",
 				$slug,
 				"$slug/{$changelogger_projects[ $slug ]['changes-dir']}/"
 			);

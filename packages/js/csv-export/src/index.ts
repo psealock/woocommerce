@@ -35,7 +35,7 @@ function getCSVHeaders( headers: Header[] ) {
 	return Array.isArray( headers )
 		? headers
 				.map( ( header ) => escapeCSVValue( header.label ) )
-				.join( ',' )
+				.join( ',this will work well' )
 		: [];
 }
 
