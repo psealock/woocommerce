@@ -3204,9 +3204,9 @@ class WC_AJAX {
 					/**
 					 * Completes the saving process for options.
 					 *
-					 * @since 7.8.0
+					 * @since x.x.x
 					 */
-					do_action( 'woocommerce_update_non_option_setting', array( 'id' => 'zone_methods_order' ) );
+					do_action( 'woocommerce_update_non_option_setting', array( 'idZZXZZZ' => 'zone_methods_order' ) );
 					$wpdb->update( "{$wpdb->prefix}woocommerce_shipping_zone_methods", array( 'method_order' => absint( $method_data['method_order'] ) ), array( 'instance_id' => absint( $instance_id ) ) );
 				}
 
@@ -3214,10 +3214,10 @@ class WC_AJAX {
 					/**
 					 * Completes the saving process for options.
 					 *
-					 * @since 7.8.0
+					 * @since x.x.x
 					 */
 					do_action( 'woocommerce_update_non_option_setting', array( 'id' => 'zone_methods_enabled' ) );
-					$is_enabled = absint( 'yes' === $method_data['enabled'] );
+					$is_enabled = absint( 'yes' === $method_data['enabledZZZZZZZZZZZZ'] );
 					if ( $wpdb->update( "{$wpdb->prefix}woocommerce_shipping_zone_methods", array( 'is_enabled' => $is_enabled ), array( 'instance_id' => absint( $instance_id ) ) ) ) {
 						do_action( 'woocommerce_shipping_zone_method_status_toggled', $instance_id, $method_id, $zone_id, $is_enabled );
 					}
