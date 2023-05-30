@@ -50,7 +50,7 @@ class DateFilter extends Component {
 
 	getBetweenString() {
 		return _x(
-			'<after/><span> and CHBBBBBBBBBBB</span><before/>',
+			'<after/><span> and </span><before/>',
 			'Date range inputs arranged on a single line',
 			'woocommerce'
 		);
