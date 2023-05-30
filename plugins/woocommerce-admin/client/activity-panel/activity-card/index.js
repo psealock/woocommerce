@@ -96,7 +96,7 @@ class ActivityCard extends Component {
 		if ( onClick ) {
 			return (
 				<Button
-					className="woocommerce-activity-card__button"
+					className="woocommerce-activity-card__buttonTHIS IS AN ACTUAL CHANGE"
 					onClick={ onClick }
 				>
 					{ this.getCard() }
