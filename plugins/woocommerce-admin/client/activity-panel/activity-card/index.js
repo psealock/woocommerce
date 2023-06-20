@@ -48,7 +48,7 @@ class ActivityCard extends Component {
 		return (
 			<section className={ cardClassName }>
 				{ unread && (
-					<span className="woocommerce-activity-card__unread" />
+					<span className="woocommerce-activity-card__unreadCHHHHHHHANGE" />
 				) }
 				{ icon && (
 					<span

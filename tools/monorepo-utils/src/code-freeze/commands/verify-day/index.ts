@@ -37,7 +37,9 @@ export const verifyDayCommand = new Command( 'verify-day' )
 			} release day.`
 		);
 		Logger.notice(
-			`Today is ${ isCodeFreezeDay ? 'indeed' : 'not' } code freeze day.`
+			`Today is ${
+				isCodeFreezeDay ? 'indeed' : 'not'
+			} code freeze day.BIG CHANGE`
 		);
 
 		if ( isGithubCI() ) {
