@@ -43,7 +43,8 @@
 		"start": "tsc --watch",
 		"lint": "eslint . --ext .ts",
 		"postinstall": "pnpm run build",
-		"test": "jest"
+		"test": "jest",
+		"prepare": "composer install"
 	},
 	"engines": {
 		"node": "^16.14.1",
