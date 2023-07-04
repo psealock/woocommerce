@@ -144,10 +144,13 @@ const program = new Command( 'changefile' )
 					Logger.notice(
 						`Installing dependencies in ${ tmpRepoPath }`
 					);
-					execSync( 'pnpm install', {
-						cwd: tmpRepoPath,
-						stdio: 'inherit',
-					} );
+					execSync(
+						'pnpm --filter=tools/monorepo-utils composer install',
+						{
+							cwd: tmpRepoPath,
+							stdio: 'inherit',
+						}
+					);
 				}
 
 				touchedProjectsRequiringChangelog.forEach( ( project ) => {
